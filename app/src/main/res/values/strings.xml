@@ -9,4 +9,10 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
+    <string name="txt_logo_buat_splashscreen">Logo Buat SplashScreen</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="txt_next">Next</string>
+    <string name="txt_dummy">lobortis elementum nibh tellus molestie nunc non blandit massa enim nec dui</string>
+    <string name="txt_on_boarding_img">On Boarding Img</string>
 </resources>
