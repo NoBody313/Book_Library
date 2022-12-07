@@ -4,6 +4,188 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_marginStart="32dp"
+    android:layout_marginEnd="32dp"
     tools:context=".login.LoginActivity">
 
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="48dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="110dp"
+        android:src="@drawable/logo_black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/line_1"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/black_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img_logo" />
+
+    <TextView
+        android:id="@+id/tv_title_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="@string/txt_welcome_back"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/line_1" />
+
+    <TextView
+        android:id="@+id/tv_subtitle_login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/txt_don_t_have_an_account"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_title_login" />
+
+    <View
+        android:id="@+id/line_2"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/black_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_subtitle_login" />
+
+    <EditText
+        android:id="@+id/et_username"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/bg_et_field"
+        android:fontFamily="@font/poppins_regular"
+        android:hint="@string/txt_username"
+        android:inputType="text"
+        android:paddingStart="25dp"
+        android:paddingTop="12dp"
+        android:paddingEnd="25dp"
+        android:paddingBottom="8dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray_text"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/line_2" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/bg_et_field"
+        android:fontFamily="@font/poppins_regular"
+        android:hint="@string/txt_password"
+        android:inputType="textPassword"
+        android:paddingStart="25dp"
+        android:paddingTop="12dp"
+        android:paddingEnd="25dp"
+        android:paddingBottom="8dp"
+        android:textColor="@color/black"
+        android:textColorHint="@color/gray_text"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_username" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/bg_button"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/txt_login"
+        android:textAllCaps="false"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_password" />
+
+    <View
+        android:id="@+id/line_3"
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="32dp"
+        android:background="@color/black_gray"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_login" />
+
+    <View
+        android:id="@+id/line_4"
+        android:layout_width="30dp"
+        android:layout_height="1dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="47dp"
+        android:background="@color/gray_line"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/line_3" />
+
+    <TextView
+        android:id="@+id/tv_or"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="9dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/txt_or"
+        android:textAlignment="center"
+        android:textColor="@color/gray_line"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/line_5"
+        app:layout_constraintStart_toEndOf="@id/line_4"
+        app:layout_constraintTop_toBottomOf="@id/line_3" />
+
+    <View
+        android:id="@+id/line_5"
+        android:layout_width="30dp"
+        android:layout_height="1dp"
+        android:layout_marginTop="47dp"
+        android:layout_marginEnd="120dp"
+        android:background="@color/gray_line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/line_3" />
+
+    <Button
+        android:id="@+id/btn_google"
+        android:layout_width="280dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_button"
+        android:drawableLeft="@drawable/ic_google"
+        android:drawableTint="@color/white"
+        android:fontFamily="@font/poppins_regular"
+        android:paddingStart="70dp"
+        android:paddingEnd="40dp"
+        android:text="@string/txt_login_with_google"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textSize="10sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_or" />
+
+    <Button
+        android:id="@+id/btn_facebook"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/bg_button"
+        android:drawableEnd="@drawable/ic_facebook"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_or"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
