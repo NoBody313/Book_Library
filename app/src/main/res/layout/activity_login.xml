@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:layout_marginStart="32dp"
-    android:layout_marginEnd="32dp"
+    android:paddingStart="32dp"
+    android:paddingEnd="32dp"
     tools:context=".login.LoginActivity">
 
     <ImageView
@@ -50,6 +50,18 @@
         android:textSize="16sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_title_login" />
+
+    <TextView
+        android:id="@+id/tv_register"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:fontFamily="@font/poppins_regular"
+        android:text="@string/txt_register"
+        android:textColor="@color/blue_text"
+        android:textSize="16sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/tv_subtitle_login"
+        app:layout_constraintStart_toEndOf="@id/tv_subtitle_login" />
 
     <View
         android:id="@+id/line_2"
@@ -109,6 +121,7 @@
         android:background="@drawable/bg_button"
         android:fontFamily="@font/poppins_regular"
         android:text="@string/txt_login"
+        android:textColor="@color/white"
         android:textAllCaps="false"
         android:textSize="12sp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -168,6 +181,7 @@
         android:layout_marginTop="30dp"
         android:background="@drawable/bg_button"
         android:drawableLeft="@drawable/ic_google"
+        android:textColor="@color/white"
         android:drawableTint="@color/white"
         android:fontFamily="@font/poppins_regular"
         android:paddingStart="70dp"
@@ -184,8 +198,9 @@
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:layout_marginTop="30dp"
+        android:paddingEnd="16dp"
         android:background="@drawable/bg_button"
-        android:drawableEnd="@drawable/ic_facebook"
+        android:drawableRight="@drawable/ic_facebook"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_or"/>
+        app:layout_constraintTop_toBottomOf="@id/tv_or" />
 </androidx.constraintlayout.widget.ConstraintLayout>

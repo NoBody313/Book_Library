@@ -5,11 +5,6 @@
     android:id="@+id/on_board_nav"
     app:startDestination="@id/splashScreenFragment">
 
-    <activity
-        android:id="@+id/splashScreenActivity"
-        android:name="com.example.booklibrary.splashscreen.SplashScreenActivity"
-        android:label="activity_splash_screen"
-        tools:layout="@layout/activity_splash_screen" />
     <fragment
         android:id="@+id/splashScreenFragment"
         android:name="com.example.booklibrary.splashscreen.fragment.SplashScreenFragment"

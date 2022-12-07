@@ -14,7 +14,7 @@
         android:contentDescription="@string/txt_logo_buat_splashscreen"
         android:layout_width="84dp"
         android:layout_height="84dp"
-        android:layout_marginTop="140dp"
+        android:layout_marginTop="160dp"
         android:src="@drawable/logo_black"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

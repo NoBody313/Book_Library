@@ -22,4 +22,9 @@
     <string name="txt_login">Login</string>
     <string name="txt_or">OR</string>
     <string name="txt_login_with_google">Login with Google</string>
+    <string name="txt_register">Register</string>
+    <string name="txt_already_have_account">Already have account?</string>
+    <string name="txt_register_with_google">Register with Google</string>
+    <string name="txt_welcome">Welcome!</string>
+    <string name="txt_email">Email</string>
 </resources>
