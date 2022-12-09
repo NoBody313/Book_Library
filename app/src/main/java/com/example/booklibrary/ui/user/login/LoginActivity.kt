@@ -4,12 +4,14 @@ import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.EditText
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import com.example.booklibrary.MainActivity
 import com.example.booklibrary.R
 import com.example.booklibrary.databinding.ActivityLoginBinding
+import com.example.booklibrary.tools.session.LoginPref
 import com.example.booklibrary.ui.user.register.RegisterActivity
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount
@@ -25,12 +27,28 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var auth : FirebaseAuth
     private lateinit var googleSignInClient : GoogleSignInClient
 
+    // Session
+    private lateinit var etEmail : EditText
+    private lateinit var etPassword : EditText
+    private lateinit var btnLogin : Button
+
+    lateinit var session: LoginPref
+
     override fun onCreate(savedInstanceState: Bundle?) {
         binding = ActivityLoginBinding.inflate(layoutInflater)
         super.onCreate(savedInstanceState)
         supportActionBar?.hide()
         setContentView(binding.root)
 //        firebaseAuth = FirebaseAuth.getInstance()
+
+        // Session
+        session = LoginPref(this)
+        if (session.isLoggedIn()) {
+            val i : Intent = Intent(applicationContext, MainActivity::class.java)
+            i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
+            startActivity(i)
+            finish()
+        }
 
         auth = FirebaseAuth.getInstance()
 
@@ -41,12 +59,12 @@ class LoginActivity : AppCompatActivity() {
         }
 
         binding.btnLogin.setOnClickListener {
-            val username = binding.etUsername.text.toString()
+            val email = binding.etEmail.text.toString()
             val password = binding.etPassword.text.toString()
 
-            if (username.isEmpty()) {
-                binding.etUsername.error = "Username is required"
-                binding.etUsername.requestFocus()
+            if (email.isEmpty()) {
+                binding.etEmail.error = "Username is required"
+                binding.etEmail.requestFocus()
                 return@setOnClickListener
             }
 
@@ -56,7 +74,8 @@ class LoginActivity : AppCompatActivity() {
                 return@setOnClickListener
             }
 
-            loginFirebase(username, password)
+            loginFirebase(email, password)
+            session.createLoginSession(email, password)
         }
 
         // Login Google
@@ -120,6 +139,7 @@ class LoginActivity : AppCompatActivity() {
                 }
             }
     }
+
 
     override fun onBackPressed() {
         finish()
