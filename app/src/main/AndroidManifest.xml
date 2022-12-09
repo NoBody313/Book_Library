@@ -28,7 +28,7 @@
         </activity>
 
         <activity
-            android:name=".register.RegisterActivity"
+            android:name=".ui.user.register.RegisterActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -36,7 +36,7 @@
         </activity>
 
         <activity
-            android:name=".login.LoginActivity"
+            android:name=".ui.user.login.LoginActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -44,7 +44,7 @@
         </activity>
 
         <activity
-            android:name=".detail.BooksDetailActivity"
+            android:name=".ui.detail.BooksDetailActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

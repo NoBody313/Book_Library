@@ -6,7 +6,7 @@
     android:paddingStart="32dp"
     android:paddingEnd="32dp"
     android:layout_height="match_parent"
-    tools:context=".register.RegisterActivity">
+    tools:context=".ui.user.register.RegisterActivity">
 
     <ImageView
         android:id="@+id/img_logo"

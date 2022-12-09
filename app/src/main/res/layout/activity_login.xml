@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:paddingStart="32dp"
     android:paddingEnd="32dp"
-    tools:context=".login.LoginActivity">
+    tools:context=".ui.user.login.LoginActivity">
 
     <ImageView
         android:id="@+id/img_logo"

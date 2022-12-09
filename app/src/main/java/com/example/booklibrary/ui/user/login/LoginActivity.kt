@@ -1,4 +1,4 @@
-package com.example.booklibrary.login
+package com.example.booklibrary.ui.user.login
 
 import android.app.Activity
 import android.content.Intent
@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.booklibrary.MainActivity
 import com.example.booklibrary.R
 import com.example.booklibrary.databinding.ActivityLoginBinding
-import com.example.booklibrary.register.RegisterActivity
+import com.example.booklibrary.ui.user.register.RegisterActivity
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount
 import com.google.android.gms.auth.api.signin.GoogleSignInClient

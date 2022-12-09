@@ -34,7 +34,7 @@
     </fragment>
     <activity
         android:id="@+id/loginActivity"
-        android:name="com.example.booklibrary.login.LoginActivity"
+        android:name="com.example.booklibrary.ui.user.login.LoginActivity"
         android:label="activity_login"
         tools:layout="@layout/activity_login" />
 </navigation>

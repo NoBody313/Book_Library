@@ -1,4 +1,4 @@
-package com.example.booklibrary.detail
+package com.example.booklibrary.ui.detail
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

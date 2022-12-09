@@ -1,4 +1,4 @@
-package com.example.booklibrary.bookmark
+package com.example.booklibrary.ui.bookmark
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

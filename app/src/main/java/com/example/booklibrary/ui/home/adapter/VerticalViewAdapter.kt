@@ -1,4 +1,4 @@
-package com.example.booklibrary.home.adapter
+package com.example.booklibrary.ui.home.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -29,18 +29,4 @@ class VerticalViewAdapter(private val dataBooks: ArrayList<DataBookItem>) :
     }
 
     override fun getItemCount() = dataBooks.size
-
-//     {
-//        fun bind(data: DataBookItem) {
-//            with(binding) {
-//                Glide.with(itemView.context)
-//                    .load(data.thumbnailUrl)
-//                    .apply(RequestOptions().override(350, 350))
-//                    .into(imgRvDiscovery)
-//
-//                tvTitleDiscoveryBooks.text = data.title
-//            }
-//        }
-//    }
-
 }

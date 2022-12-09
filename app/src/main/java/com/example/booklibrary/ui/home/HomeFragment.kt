@@ -1,4 +1,4 @@
-package com.example.booklibrary.home
+package com.example.booklibrary.ui.home
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -6,10 +6,10 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.recyclerview.widget.DividerItemDecoration
-import androidx.recyclerview.widget.LinearLayoutManager
+import androidx.recyclerview.widget.GridLayoutManager
 import com.example.booklibrary.databinding.FragmentHomeBinding
-import com.example.booklibrary.home.adapter.VerticalViewAdapter
 import com.example.booklibrary.tools.data.DataBook
+import com.example.booklibrary.ui.home.adapter.VerticalViewAdapter
 import com.google.gson.Gson
 import java.io.IOException
 
@@ -17,9 +17,6 @@ class HomeFragment : Fragment() {
 
     private lateinit var _binding: FragmentHomeBinding
     private val binding get() = _binding
-
-//    private var layoutManager: RecyclerView.LayoutManager? = null
-//    private var adapter: RecyclerView.Adapter<VerticalViewAdapter.CardViewHolder>? = null
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -29,6 +26,7 @@ class HomeFragment : Fragment() {
         _binding = FragmentHomeBinding.inflate(layoutInflater)
         return (binding.root)
 
+
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -36,7 +34,7 @@ class HomeFragment : Fragment() {
         val testdata = getJsonData("books.json")
 
         binding.rvDiscovery.apply {
-            layoutManager = LinearLayoutManager(context, LinearLayoutManager.VERTICAL, false)
+            layoutManager = GridLayoutManager(context, 3, GridLayoutManager.VERTICAL, false)
             adapter = VerticalViewAdapter(testdata!!)
             addItemDecoration(DividerItemDecoration(context, DividerItemDecoration.VERTICAL))
         }

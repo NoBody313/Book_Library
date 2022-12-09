@@ -1,4 +1,4 @@
-package com.example.booklibrary.register
+package com.example.booklibrary.ui.user.register
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,7 +6,7 @@ import android.util.Patterns
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.booklibrary.databinding.ActivityRegisterBinding
-import com.example.booklibrary.login.LoginActivity
+import com.example.booklibrary.ui.user.login.LoginActivity
 import com.google.firebase.auth.FirebaseAuth
 
 class RegisterActivity : AppCompatActivity() {
