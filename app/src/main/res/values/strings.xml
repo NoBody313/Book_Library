@@ -27,4 +27,11 @@
     <string name="txt_register_with_google">Register with Google</string>
     <string name="txt_welcome">Welcome!</string>
     <string name="txt_email">Email</string>
+    <string name="txt_home">Home</string>
+    <string name="txt_my_books">My Books</string>
+    <string name="txt_discovery_more">Discovery more</string>
+    <string name="txt_img_for_discovery_book">img_for_discovery_book</string>
+    <string name="txt_search">Search</string>
+    <string name="txt_bookmark">Bookmark</string>
+    <string name="txt_profile">Profile</string>
 </resources>

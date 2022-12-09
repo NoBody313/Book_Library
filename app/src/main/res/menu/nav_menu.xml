@@ -1,4 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <item
+        android:id="@+id/home_menu"
+        android:icon="@drawable/home_light"
+        android:title="@string/txt_home" />
+
+    <item
+        android:id="@+id/search_menu"
+        android:icon="@drawable/search_light"
+
+        android:title="@string/txt_search" />
+
+    <item
+        android:id="@+id/bookmark_menu"
+        android:icon="@drawable/bookmark_light"
+        android:title="@string/txt_bookmark" />
+
+    <item
+        android:id="@+id/profile_menu"
+        android:icon="@drawable/user_light"
+        android:title="@string/txt_profile" />
 </menu>
