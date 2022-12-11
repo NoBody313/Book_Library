@@ -21,6 +21,9 @@
             android:exported="true" />
         <!-- Splash Screen -->
         <activity
+            android:name=".ui.user.login.LoginActivity"
+            android:exported="true" />
+        <activity
             android:name=".splashscreen.SplashScreenActivity"
             android:exported="true">
 
@@ -32,28 +35,12 @@
         </activity>
         <activity
             android:name=".ui.user.register.RegisterActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".ui.user.login.LoginActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
+            android:exported="false" />
         <activity
             android:name=".ui.detail.BooksDetailActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true" />
     </application>
-
 </manifest>
