@@ -34,4 +34,12 @@
     <string name="txt_search">Search</string>
     <string name="txt_bookmark">Bookmark</string>
     <string name="txt_profile">Profile</string>
+    <string name="txt_image_detail_for_book">Image detail for book</string>
+    <string name="txt_isbn">ISBN</string>
+    <string name="txt_pages">Pages</string>
+    <string name="txt_status">Status</string>
+    <string name="txt_publish_date">Publish date :</string>
+    <string name="txt_author">Author :</string>
+    <string name="txt_category">Category</string>
+    <string name="txt_about_book">About book</string>
 </resources>

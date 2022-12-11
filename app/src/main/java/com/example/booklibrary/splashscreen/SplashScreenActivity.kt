@@ -1,7 +1,7 @@
 package com.example.booklibrary.splashscreen
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.example.booklibrary.R
 
 class SplashScreenActivity : AppCompatActivity() {
