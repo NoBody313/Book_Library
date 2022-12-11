@@ -11,8 +11,8 @@
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" />
     <fragment
-        android:id="@+id/profile_menu"
-        android:name="com.example.booklibrary.ui.profile.ProfileFragment"
+        android:id="@+id/info_menu"
+        android:name="com.example.booklibrary.ui.info.InfoFragment"
         android:label="fragment_profile"
-        tools:layout="@layout/fragment_profile" />
+        tools:layout="@layout/fragment_info" />
 </navigation>

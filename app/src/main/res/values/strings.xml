@@ -42,4 +42,11 @@
     <string name="txt_author">Author :</string>
     <string name="txt_category">Category</string>
     <string name="txt_about_book">About book</string>
+    <string name="txt_about_app">About App</string>
+    <string name="txt_developer">Developer :</string>
+    <string name="txt_muhammad_fatih_maulana">Muhammad Fatih Maulana</string>
+    <string name="txt_logout">Logout</string>
+    <string name="txt_nobody313">NoBody313</string>
+    <string name="txt_github">Github :</string>
+    <string name="txt_another_features_coming_soon">Another features coming soon !!!</string>
 </resources>

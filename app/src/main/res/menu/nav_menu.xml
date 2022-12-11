@@ -7,7 +7,7 @@
         android:title="@string/txt_home" />
 
     <item
-        android:id="@+id/profile_menu"
-        android:icon="@drawable/user_light"
+        android:id="@+id/info_menu"
+        android:icon="@drawable/info_icon"
         android:title="@string/txt_profile" />
 </menu>
