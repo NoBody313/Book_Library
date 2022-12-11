@@ -61,7 +61,7 @@ class InfoFragment : Fragment() {
     private fun logoutButton() {
         auth = FirebaseAuth.getInstance()
         Firebase.auth.signOut()
-        val i = Intent(context, RegisterActivity::class.java)
+        val i = Intent(context, LoginActivity::class.java)
         startActivity(i)
     }
 }
