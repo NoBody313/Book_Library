@@ -7,17 +7,6 @@
         android:title="@string/txt_home" />
 
     <item
-        android:id="@+id/search_menu"
-        android:icon="@drawable/search_light"
-
-        android:title="@string/txt_search" />
-
-    <item
-        android:id="@+id/bookmark_menu"
-        android:icon="@drawable/bookmark_light"
-        android:title="@string/txt_bookmark" />
-
-    <item
         android:id="@+id/profile_menu"
         android:icon="@drawable/user_light"
         android:title="@string/txt_profile" />
