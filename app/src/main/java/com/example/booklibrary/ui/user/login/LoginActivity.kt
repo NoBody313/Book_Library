@@ -11,7 +11,6 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.booklibrary.MainActivity
 import com.example.booklibrary.R
 import com.example.booklibrary.databinding.ActivityLoginBinding
-import com.example.booklibrary.tools.session.LoginPref
 import com.example.booklibrary.ui.user.register.RegisterActivity
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount
@@ -142,6 +141,6 @@ class LoginActivity : AppCompatActivity() {
 
     override fun onBackPressed() {
         super.onBackPressed()
-        finish()
+        finishAffinity()
     }
 }

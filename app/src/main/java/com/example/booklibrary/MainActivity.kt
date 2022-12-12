@@ -2,11 +2,11 @@ package com.example.booklibrary
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.inputmethod.InputBinding
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
+import com.example.booklibrary.R
 import com.example.booklibrary.databinding.ActivityMainBinding
 import com.example.booklibrary.tools.session.LoginPref
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -28,7 +28,6 @@ class MainActivity : AppCompatActivity() {
         session.checkLogin()
 
         val navView: BottomNavigationView = binding.navMenu
-
         val navController = findNavController(R.id.nav_fragment_activity_main)
         val appBarConfiguration = AppBarConfiguration(
             setOf(

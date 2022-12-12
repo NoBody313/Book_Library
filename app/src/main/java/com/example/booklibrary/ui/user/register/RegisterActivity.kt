@@ -80,6 +80,6 @@ class RegisterActivity : AppCompatActivity() {
     }
 
     override fun onBackPressed() {
-        finish()
+        finishAffinity()
     }
 }

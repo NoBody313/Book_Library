@@ -81,4 +81,9 @@ class BooksDetailActivity : AppCompatActivity() {
             Glide.with(imgDetailBook.context).load(intentImage).into(imgDetailBook)
         }
     }
+
+    override fun onBackPressed() {
+        super.onBackPressed()
+        finishAffinity()
+    }
 }
