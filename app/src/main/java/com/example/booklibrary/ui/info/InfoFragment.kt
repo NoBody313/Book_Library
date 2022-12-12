@@ -2,17 +2,12 @@ package com.example.booklibrary.ui.info
 
 import android.content.Intent
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.window.SplashScreen
-import com.example.booklibrary.R
+import androidx.fragment.app.Fragment
 import com.example.booklibrary.databinding.FragmentInfoBinding
-import com.example.booklibrary.splashscreen.SplashScreenActivity
-import com.example.booklibrary.splashscreen.onboarding.screen.FirstScreen
 import com.example.booklibrary.ui.user.login.LoginActivity
-import com.example.booklibrary.ui.user.register.RegisterActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
@@ -63,5 +58,10 @@ class InfoFragment : Fragment() {
         Firebase.auth.signOut()
         val i = Intent(context, LoginActivity::class.java)
         startActivity(i)
+    }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        _binding = null
     }
 }
