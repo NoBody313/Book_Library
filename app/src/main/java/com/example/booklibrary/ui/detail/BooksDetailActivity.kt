@@ -5,8 +5,6 @@ import androidx.appcompat.app.AppCompatActivity
 import com.bumptech.glide.Glide
 import com.example.booklibrary.R
 import com.example.booklibrary.databinding.ActivityBooksDetailBinding
-import com.example.booklibrary.tools.data.DataBookItem
-import com.google.gson.Gson
 
 class BooksDetailActivity : AppCompatActivity() {
 
@@ -83,7 +81,7 @@ class BooksDetailActivity : AppCompatActivity() {
     }
 
     override fun onBackPressed() {
-        super.onBackPressed()
-        finishAffinity()
+        super.getOnBackPressedDispatcher().onBackPressed()
+        finish()
     }
 }

@@ -39,12 +39,6 @@ class RegisterActivity : AppCompatActivity() {
                 return@setOnClickListener
             }
 
-//            if (username.isEmpty()) {
-//                binding.etEmail.error = "Username is required"
-//                binding.etEmail.requestFocus()
-//                return@setOnClickListener
-//            }
-
             if (password.isEmpty()) {
                 binding.etPassword.error = "Password is required"
                 binding.etPassword.requestFocus()
@@ -63,6 +57,7 @@ class RegisterActivity : AppCompatActivity() {
         binding.tvLogin.setOnClickListener {
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
+            finish()
         }
     }
 

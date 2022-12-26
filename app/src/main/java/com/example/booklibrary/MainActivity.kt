@@ -1,20 +1,21 @@
 package com.example.booklibrary
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
-import com.example.booklibrary.R
 import com.example.booklibrary.databinding.ActivityMainBinding
-import com.example.booklibrary.tools.session.LoginPref
+import com.example.booklibrary.tools.user.SharedPreference
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var session: LoginPref
-    private lateinit var binding:ActivityMainBinding
+    private lateinit var binding: ActivityMainBinding
+
+    //Shared Preference
+    private lateinit var preference: SharedPreference
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,8 +25,7 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         // Session
-        session = LoginPref(this)
-        session.checkLogin()
+        preference = SharedPreference(this)
 
         val navView: BottomNavigationView = binding.navMenu
         val navController = findNavController(R.id.nav_fragment_activity_main)
@@ -38,10 +38,5 @@ class MainActivity : AppCompatActivity() {
         setupActionBarWithNavController(navController, appBarConfiguration)
         navView.setupWithNavController(navController)
 
-    }
-
-    override fun onBackPressed() {
-        super.onBackPressed()
-        finish()
     }
 }
